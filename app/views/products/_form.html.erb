@@ -26,9 +26,13 @@
     <%= f.text_field :price %>
   </div>
 
-  <div class="field">
-    <%= f.label :category_id %>
-    <%= f.text_field :category_id %>
+  <div class="form-group">
+      <%= f.select(:category_id, @categories.collect {|c| [c.name, c.id]}, {include_blank: "Please Select a Category"}) %>
+    </div>
+
+  <div class="form-group">
+    <strong>Upload Product Image: </strong>
+    <%= f.file_field :image %>
   </div>
 
   <div class="actions">
