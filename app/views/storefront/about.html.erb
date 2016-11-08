@@ -1,11 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 	<title>About</title>
 </head>
 <body>
 
-<h1>About</h1>
+<h1>Lark & Lapis</h1>
+<div style="text-align: left;">
+<p><span>My name is Kelly Titus and I am a jewelry designer living in Marietta, Georgia. </span></p>
+<p>My work is inspired by the seasons; seasons of life and of the natural world.</p>
+<p><br><span></span></p>
+<p>My goal is to offer a bit of handcrafted beauty in celebration of God's beautiful bounty. :)</p>
+<p>Enjoy my site and please contact me with questions or comments at kelly@larkandspur.com</p>
+</div>
 
+<p>
+<div class="container">
+<div class="row">
+ <div class="col-xs-3 col-md-4">
+  
+  <%= image_tag("Kelup.jpg", :alt => "Kelly", class:"profile-img") %>
+
+   <%= yield %>
+ </div>
+</div>
+</div>
+</p>
 </body>
 </html>
+
+
